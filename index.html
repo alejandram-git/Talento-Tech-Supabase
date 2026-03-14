@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Únete a Talento Tech Oriente: Bootcamps gratuitos de programación, IA y más impulsados por MinTIC Colombia. Transforma tu futuro digital hoy.">
+    <meta name="keywords"
+        content="bootcamp gratuito, tecnología, programación, inteligencia artificial, MinTIC, Colombia, Talento Tech">
+    <title>Talento Tech Oriente | Aprende Tecnología y Transforma tu Futuro</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css?v=2.1">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/48/000000/code.png">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="https://res.cloudinary.com/duu803ale/image/upload/v1773379181/LOGO-TALENTO-ORIENTE-COLOR-SOMBRA_l43cti.png"
+                    alt="Talento Tech Oriente Logo" height="50">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre el Programa</a></li>
+                <li><a href="#areas">Formación</a></li>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#proceso">Cómo Aplicar</a></li>
+                <li><a href="#comentarios">Comentarios</a></li>
+            </ul>
+            <div class="nav-auth-container">
+                <div id="nav-logged-out" style="display: flex; gap: 15px; align-items: center;">
+                    <a href="javascript:void(0)" id="nav-login" style="color: white; font-weight: 600;">Ingresar</a>
+                    <a href="javascript:void(0)" id="nav-register" class="btn-nav">Registro</a>
+                </div>
+                <div id="nav-logged-in" style="display: none; gap: 15px; align-items: center;">
+                    <span id="nav-user-display" style="color: white; font-weight: 600;"></span>
+                    <a href="javascript:void(0)" id="nav-logout"
+                        style="color: #cbd5e1; font-size: 0.9rem; text-decoration: underline;">Salir</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content" data-aos>
+                <h1>Aprende tecnología y transforma tu futuro</h1>
+                <p>Bootcamps gratuitos en programación, inteligencia artificial, datos y ciberseguridad.</p>
+                <div class="hero-btns">
+                    <a href="#inscripcion" class="btn-primary">Inscríbete gratis</a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos>
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1200"
+                    alt="Estudiantes de tecnología colaborando">
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-val">100%</span>
+                        <span class="stat-label">Gratuito</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-val">3 Meses</span>
+                        <span class="stat-label">Duración</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-val">+10k</span>
+                        <span class="stat-label">Egresados</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre el Programa -->
+    <section id="sobre" class="about" data-aos>
+        <div class="container">
+            <div class="section-head">
+                <h2>Cerrando la brecha digital</h2>
+                <p>Talento Tech Oriente es una iniciativa del Ministerio TIC de Colombia diseñada para empoderar a
+                    colombianos con habilidades digitales avanzadas, conectándolos con oportunidades laborales reales en
+                    el sector tecnológico.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Áreas de Formación -->
+    <section id="areas" class="areas">
+        <div class="container">
+            <div class="section-head" data-aos>
+                <h2>Áreas de Formación</h2>
+                <p>Elige tu camino y conviértete en un experto digital con nuestros bootcamps especializados.</p>
+            </div>
+            <div class="areas-grid">
+                <div class="area-card" data-aos>
+                    <div class="area-icon"><i data-lucide="code-2"></i></div>
+                    <h3>Programación Web</h3>
+                    <p>Domina los lenguajes y frameworks para crear aplicaciones modernas y escalables.</p>
+                </div>
+                <div class="area-card" data-aos>
+                    <div class="area-icon"><i data-lucide="brain-circuit"></i></div>
+                    <h3>Inteligencia Artificial</h3>
+                    <p>Aprende a diseñar sistemas inteligentes y modelos de aprendizaje automático.</p>
+                </div>
+                <div class="area-card" data-aos>
+                    <div class="area-icon"><i data-lucide="database"></i></div>
+                    <h3>Análisis de Datos</h3>
+                    <p>Transforma datos complejos en información estratégica para la toma de decisiones.</p>
+                </div>
+                <div class="area-card" data-aos>
+                    <div class="area-icon"><i data-lucide="link"></i></div>
+                    <h3>Blockchain</h3>
+                    <p>Explora la tecnología detrás de las criptomonedas y los contratos inteligentes.</p>
+                </div>
+                <div class="area-card" data-aos>
+                    <div class="area-icon"><i data-lucide="cloud"></i></div>
+                    <h3>Cloud Computing</h3>
+                    <p>Diseña infraestructuras robustas en la nube para empresas globales.</p>
+                </div>
+                <div class="area-card" data-aos>
+                    <div class="area-icon"><i data-lucide="shield-check"></i></div>
+                    <h3>Ciberseguridad</h3>
+                    <p>Protege la información y los sistemas contra amenazas digitales avanzadas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section id="beneficios" class="benefits">
+        <div class="container">
+            <div class="section-head" data-aos>
+                <h2>¿Por qué elegir Talento Tech?</h2>
+                <p>Mucho más que un curso, es tu puerta de entrada al mundo profesional.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-item" data-aos>
+                    <div class="benefit-icon"><i data-lucide="zap"></i></div>
+                    <h3>100% Gratuito</h3>
+                    <p>Formación de alta calidad sin costo alguno para el estudiante.</p>
+                </div>
+                <div class="benefit-item" data-aos>
+                    <div class="benefit-icon"><i data-lucide="award"></i></div>
+                    <h3>Certificación</h3>
+                    <p>Recibe un certificado oficial avalado por el Ministerio TIC.</p>
+                </div>
+                <div class="benefit-item" data-aos>
+                    <div class="benefit-icon"><i data-lucide="clock"></i></div>
+                    <h3>Intensivo</h3>
+                    <p>Metodología acelerada de 3 meses enfocada en resultados.</p>
+                </div>
+                <div class="benefit-item" data-aos>
+                    <div class="benefit-icon"><i data-lucide="briefcase"></i></div>
+                    <h3>Orientación Laboral</h3>
+                    <p>Apoyo e intermediación para conectarte con empleos reales.</p>
+                </div>
+                <div class="benefit-item" data-aos>
+                    <div class="benefit-icon"><i data-lucide="rocket"></i></div>
+                    <h3>Proyectos Reales</h3>
+                    <p>Aplica tus conocimientos en desafíos prácticos del sector.</p>
+                </div>
+                <div class="benefit-item" data-aos>
+                    <div class="benefit-icon"><i data-lucide="users"></i></div>
+                    <h3>Networking</h3>
+                    <p>Conecta con expertos y empresas líderes en tecnología.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo Aplicar -->
+    <section id="proceso" class="process">
+        <div class="container">
+            <div class="section-head" data-aos>
+                <h2>Tu camino al éxito</h2>
+                <p>Sigue estos tres sencillos pasos para asegurar tu lugar.</p>
+            </div>
+            <div class="process-steps">
+                <div class="step-card" data-aos>
+                    <div class="step-num">1</div>
+                    <h3>Registro</h3>
+                    <p>Completa el formulario de inscripción con tus datos básicos.</p>
+                </div>
+                <div class="step-card" data-aos>
+                    <div class="step-num">2</div>
+                    <h3>Diagnóstico</h3>
+                    <p>Presenta una prueba para identificar tu nivel inicial.</p>
+                </div>
+                <div class="step-card" data-aos>
+                    <div class="step-num">3</div>
+                    <h3>Formación</h3>
+                    <p>¡Inicia tu capacitación y transforma tu perfil profesional!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-head" data-aos>
+                <h2>Vidas Transformadas</h2>
+                <p>Nuestros egresados son el mejor testimonio de la calidad del programa.</p>
+            </div>
+            <div class="areas-grid">
+                <div class="area-card" data-aos>
+                    <p>"Gracias a Talento Tech aprendí Programación Web desde cero. Hoy trabajo como Junior Developer en
+                        una startup de Medellín."</p>
+                    <div style="margin-top: 20px; font-weight: 700;">- Carlos Mendoza</div>
+                    <div style="font-size: 0.8rem; color: var(--text-muted);">Egresado Cohorte 1</div>
+                </div>
+                <div class="area-card" data-aos>
+                    <p>"La formación en Análisis de Datos me permitió cambiar de carrera. Ahora tomo decisiones basadas
+                        en información real en mi empresa."</p>
+                    <div style="margin-top: 20px; font-weight: 700;">- Laura Giraldo</div>
+                    <div style="font-size: 0.8rem; color: var(--text-muted);">Egresada Cohorte 2</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comentarios -->
+    <section id="comentarios" class="comentarios-section">
+        <div class="container">
+            <div class="section-head" data-aos>
+                <h2>Comunidad</h2>
+                <p>Déjanos tus dudas, opiniones o sugerencias sobre el programa.</p>
+            </div>
+            <div class="comentarios-wrapper">
+                <div class="comentarios-form-container" data-aos>
+                    <!-- Auth Prompt (unauthenticated) -->
+                    <div id="auth-prompt" class="auth-prompt"
+                        style="padding: 50px 20px; background: var(--bg-light); border-radius: 16px; border: 2px dashed #cbd5e1;">
+                        <i data-lucide="lock"
+                            style="width: 48px; height: 48px; color: #94a3b8; margin: 0 auto 15px; display: block;"></i>
+                        <h3 style="color: #334155; margin-bottom: 15px;">Sección Bloqueada</h3>
+                        <p style="color: #64748b; margin-bottom: 25px; font-size: 1.1rem;">Debes iniciar sesión o
+                            registrarte para comentar.</p>
+                        <div class="auth-buttons">
+                            <button id="btn-show-register-prompt" class="btn-primary"
+                                style="padding: 14px 30px; font-size: 1.1rem; border: none; cursor: pointer;">Registrarse</button>
+                        </div>
+                    </div>
+
+                    <!-- Comment Form (authenticated) -->
+                    <form id="comment-form" class="comentarios-form" style="display: none;">
+                        <div class="user-info-header" style="margin-bottom: 15px;">
+                            <span id="current-user-email"></span>
+                        </div>
+                        <div class="form-group" style="display: none;">
+                            <label for="comment-name">Nombre</label>
+                            <input type="text" id="comment-name" class="form-control" placeholder="Tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="comment-text">Comentario</label>
+                            <textarea id="comment-text" class="form-control" rows="4"
+                                placeholder="Escribe tu mensaje..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit" id="btn-comentar">Publicar Comentario</button>
+                    </form>
+
+                    <!-- Auth Modal -->
+                    <div id="auth-modal" class="auth-modal" style="display: none;">
+                        <div class="auth-modal-content">
+                            <span class="close-modal" id="close-modal">&times;</span>
+                            <h3 id="auth-modal-title" style="margin-bottom: 20px;">Iniciar Sesión</h3>
+                            <form id="auth-form">
+                                <div class="form-group" id="group-name" style="display: none;">
+                                    <label for="auth-name">Nombre</label>
+                                    <input type="text" id="auth-name" class="form-control" placeholder="Tu nombre">
+                                </div>
+                                <div class="form-group">
+                                    <label for="auth-email">Correo Electrónico</label>
+                                    <input type="email" id="auth-email" class="form-control" placeholder="tu@email.com"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="auth-password">Contraseña</label>
+                                    <input type="password" id="auth-password" class="form-control"
+                                        placeholder="Min. 6 caracteres" required minlength="6">
+                                </div>
+                                <button type="submit" id="btn-auth-submit" class="btn-submit">Entrar</button>
+                                <p id="auth-error-msg"
+                                    style="color: #ef4444; margin-top: 15px; display: none; font-size: 0.9rem; text-align: center;">
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="comentarios-list-container" data-aos>
+                    <h3>Comentarios Recientes</h3>
+                    <div class="comentarios-list" id="comentarios-list">
+                        <!-- Comentarios dinámicos -->
+                        <p style="color: var(--text-muted); text-align: center;">Cargando comentarios...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inscripción -->
+    <section id="inscripcion" class="enrollment">
+        <div class="container">
+            <div class="enroll-info" data-aos>
+                <h2>Comienza tu carrera en tecnología hoy</h2>
+                <p>No pierdas la oportunidad de ser parte de la nueva generación de talentos digitales en Colombia. Los
+                    cupos son limitados.</p>
+            </div>
+            <div class="enroll-form" data-aos>
+                <form id="contact-form" action="https://formspree.io/f/myknjvgg" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" id="name" name="nombre" class="form-control" placeholder="Ej. Juan Pérez"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Electrónico</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="juan@ejemplo.com"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" name="telefono" class="form-control" placeholder="300 000 0000"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">Ciudad</label>
+                        <input type="text" id="city" name="ciudad" class="form-control" placeholder="Ej. Cúcuta"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">Área de Interés</label>
+                        <select id="interest" name="area_de_interes" class="form-control" required>
+                            <option value="">Selecciona un área</option>
+                            <option value="programacion">Programación Web</option>
+                            <option value="ia">Inteligencia Artificial</option>
+                            <option value="datos">Análisis de Datos</option>
+                            <option value="blockchain">Blockchain</option>
+                            <option value="cloud">Arquitectura Cloud</option>
+                            <option value="seguridad">Ciberseguridad</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar inscripción</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#" class="logo">
+                        <img src="https://res.cloudinary.com/duu803ale/image/upload/v1773379181/LOGO-TALENTO-ORIENTE-COLOR-SOMBRA_l43cti.png"
+                            alt="Talento Tech Oriente Logo" height="40">
+                    </a>
+                    <p style="margin-top: 20px; color: var(--text-muted);">Un programa impulsado por el Ministerio TIC
+                        de Colombia.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces</h4>
+                    <a href="#sobre">Sobre el Programa</a>
+                    <a href="#areas">Áreas de Formación</a>
+                    <a href="#beneficios">Beneficios</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Contacto</h4>
+                    <a href="mailto:contacto@talentotechoriente.com">contacto@talentotechoriente.com</a>
+                    <div style="display: flex; gap: 15px; margin-top: 15px; font-size: 1.2rem;">
+                        <i data-lucide="facebook"></i>
+                        <i data-lucide="instagram"></i>
+                        <i data-lucide="twitter"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Talento Tech Oriente. Todos los derechos reservados. Ministerio TIC Colombia.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbase -->
+    <script>
+        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "8iaF5iJaLHNaAv5RV4rn4"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
+
+    <!-- Supabase JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- JS -->
+    <script src="script.js?v=2.1"></script>
+</body>
+
+</html>
